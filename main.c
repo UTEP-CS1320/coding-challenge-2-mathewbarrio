@@ -21,4 +21,22 @@ int main(void) {
       printf("Normal\n");
     }
   }
+  
+  else if (((s > 119) && (s < 130)) && (d < 80)) {
+    printf("Elevated\n");
+  }
+  
+  else if (((s > 129) && (s < 140)) || ((d > 79) && (d <= 90))) {
+    printf ("Stage 1 Hypertension\n");
+  }
+  
+  else if ((s > 140) || (d > 90)) {
+    printf("Stage 2 Hypertension\n");
+    
+  else if (( s > 180) || (d > 120)) {
+    printf("Hypertensive Crysis\n");
+    
+  else {
+    printf("ERROR\n");
+  }
 }
